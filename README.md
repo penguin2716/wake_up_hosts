@@ -49,19 +49,20 @@ eth1 68:05:ca:xx:xx:0e node08 cluster1
 
 # 使用例
 上で例に出したホスト一覧ファイルが`~/.wol_hosts`に保存されている前提で例示します．
-1. www1をWOLする場合
+
+* www1をWOLする場合
 ```bash
 $ ./wake_up_hosts.rb www1
 ```
-2. app1とapp2をWOLする場合
+* app1とapp2をWOLする場合
 ```bash
 $ ./wake_up_hosts.rb app
 ```
-3. www1, www2, db1をWOLする場合
+* www1, www2, db1をWOLする場合
 ```bash
 $ ./wake_up_hosts.rb www db1
 ```
-4. cluster1のノードすべてをWOLする場合
+* cluster1のノードすべてをWOLする場合
 ```bash
 $ ./wake_up_hosts.rb cluster1
 ```
