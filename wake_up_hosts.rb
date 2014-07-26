@@ -68,7 +68,7 @@ keywords = ARGV
 if File.exists? $config_file
   hosts = open($config_file).read.split(/\n/).reject{ |line|
     # skip comment line starting with '#'
-    line =~ /\s*^#/
+    line =~ /^\s*#|^\s*$/
   }.map{ |line|
     # each line consists of:
     #   [interface|broadcast_ip] mac_address keywords...
